@@ -33,7 +33,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
-            ["@bazel/bazelisk", "npm:1.12.0"]\
+            ["@bazel/bazelisk", "npm:1.12.0"],\
+            ["@bazel/ibazel", "npm:0.16.2"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -47,12 +48,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@bazel/ibazel", [\
+        ["npm:0.16.2", {\
+          "packageLocation": "./.yarn/unplugged/@bazel-ibazel-npm-0.16.2-59f83bd434/node_modules/@bazel/ibazel/",\
+          "packageDependencies": [\
+            ["@bazel/ibazel", "npm:0.16.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["labs-bazel", [\
         ["workspace:.", {\
           "packageLocation": "./",\
           "packageDependencies": [\
             ["labs-bazel", "workspace:."],\
-            ["@bazel/bazelisk", "npm:1.12.0"]\
+            ["@bazel/bazelisk", "npm:1.12.0"],\
+            ["@bazel/ibazel", "npm:0.16.2"]\
           ],\
           "linkType": "SOFT"\
         }]\

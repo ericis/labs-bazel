@@ -15,10 +15,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@bazel/ibazel@npm:^0.16.2":
+  version: 0.16.2
+  resolution: "@bazel/ibazel@npm:0.16.2"
+  bin:
+    ibazel: index.js
+  checksum: be182120732f06eea872f8daa84d3655808342fcf631d20f4289a475ea652284966573f94e9594ecf83f99af7f7415d128c62c83e93ee5dad38956619b318aad
+  languageName: node
+  linkType: hard
+
 "labs-bazel@workspace:.":
   version: 0.0.0-use.local
   resolution: "labs-bazel@workspace:."
   dependencies:
     "@bazel/bazelisk": ^1.12.0
+    "@bazel/ibazel": ^0.16.2
   languageName: unknown
   linkType: soft
