@@ -1,0 +1,11 @@
+# https://stackoverflow.com/questions/57192057/up-level-references-in-bazel
+# exports_files(
+#   [".pnp.cjs"],
+#   ["//src/node/console-basic:__pkg__"]
+# )
+
+filegroup(
+    name = "yarn_pnp",
+    srcs = [".pnp.cjs"],
+    visibility = ["//src/node/console-basic:__pkg__"],
+)

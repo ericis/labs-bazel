@@ -1,0 +1,9 @@
+{
+  "name": "console-basic",
+  "private": true,
+  "main": "index.js",
+  "packageManager": "yarn@3.2.2",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}

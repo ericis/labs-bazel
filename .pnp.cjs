@@ -19,11 +19,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {\
         "name": "labs-bazel",\
         "reference": "workspace:."\
+      },\
+      {\
+        "name": "console-basic",\
+        "reference": "workspace:src/node/console-basic"\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
+      ["console-basic", ["workspace:src/node/console-basic"]],\
       ["labs-bazel", ["workspace:."]]\
     ],\
     "fallbackPool": [\
@@ -55,6 +60,25 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@bazel/ibazel", "npm:0.16.2"]\
           ],\
           "linkType": "HARD"\
+        }]\
+      ]],\
+      ["colors", [\
+        ["npm:1.4.0", {\
+          "packageLocation": "./.yarn/cache/colors-npm-1.4.0-7e2cf12234-98aa2c2418.zip/node_modules/colors/",\
+          "packageDependencies": [\
+            ["colors", "npm:1.4.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["console-basic", [\
+        ["workspace:src/node/console-basic", {\
+          "packageLocation": "./src/node/console-basic/",\
+          "packageDependencies": [\
+            ["console-basic", "workspace:src/node/console-basic"],\
+            ["colors", "npm:1.4.0"]\
+          ],\
+          "linkType": "SOFT"\
         }]\
       ]],\
       ["labs-bazel", [\

@@ -1,0 +1,8 @@
+load("@build_bazel_rules_nodejs//:index.bzl", "nodejs_binary")
+nodejs_binary(
+  name = "app",
+  entry_point = ":index.js",
+  # BUG: label '//:.pnp.cjs' in $(location) expression is not a declared prerequisite of this rule
+  # BUG: $(rootpath) not defined.
+  templated_args = ["--node_options=--require=$$(rlocation $(rootpath //:.pnp.cjs))"],
+)
