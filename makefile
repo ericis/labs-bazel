@@ -4,12 +4,11 @@ all: install
 
 .PHONY: install
 install:
-	@bazel build //src/node/console-basic:show_custom_var
-	@cat ./bazel-bin/src/node/console-basic/custom_var
+	@bazel build --define=VERBOSE_LOGS=1 //src/node/console-basic:app
 
-.PHONY: run-node-console-basic
-run-node-console-basic:
-	@bazel run //src/node/console-basic:show_custom_var
+.PHONY: run
+run:
+	@bazel run //src/node/console-basic:app
 
 .PHONY: clean
 clean:
