@@ -4,11 +4,11 @@ all: install
 
 .PHONY: install
 install:
-	@bazel build --define=VERBOSE_LOGS=1 //src/node/console-basic:app
+	@bazel build --define=VERBOSE_LOGS=1 //app1:app
 
 .PHONY: run
 run:
-	@bazel run //src/node/console-basic:app
+	@bazel run //app1:app
 
 .PHONY: clean
 clean:

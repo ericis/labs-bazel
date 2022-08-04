@@ -26,7 +26,7 @@ yarn_install(
 
 load("@build_bazel_rules_nodejs//:index.bzl", "yarn_install")
 yarn_install(
-  name = "console-basic_npm",
-  package_json = "//src/node/console-basic:package.json",
-  yarn_lock = "//src/node/console-basic:yarn.lock",
+  name = "app1_npm",
+  package_json = "//app1:package.json",
+  yarn_lock = "//app1:yarn.lock",
 )

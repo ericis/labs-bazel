@@ -22,13 +22,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       },\
       {\
         "name": "console-basic",\
-        "reference": "workspace:src/node/console-basic"\
+        "reference": "workspace:app1"\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
-      ["console-basic", ["workspace:src/node/console-basic"]],\
+      ["console-basic", ["workspace:app1"]],\
       ["labs-bazel", ["workspace:."]]\
     ],\
     "fallbackPool": [\
@@ -72,10 +72,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["console-basic", [\
-        ["workspace:src/node/console-basic", {\
-          "packageLocation": "./src/node/console-basic/",\
+        ["workspace:app1", {\
+          "packageLocation": "./app1/",\
           "packageDependencies": [\
-            ["console-basic", "workspace:src/node/console-basic"],\
+            ["console-basic", "workspace:app1"],\
             ["colors", "npm:1.4.0"]\
           ],\
           "linkType": "SOFT"\

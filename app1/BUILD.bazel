@@ -8,10 +8,10 @@ nodejs_binary(
   # BUG: hard-coded works on Git BASH for this specific path, but will fail any other path and fails Windows `cmd`
   #      *Bazel explicitly recommends NOT using Git BASH or other Windows-emulated BASH environments:
   #       https://bazel.build/docs/windows#running-bazel-shells
-  templated_args = ["--node_options=--require=/c/Users/iseri/src/github/me/labs-bazel/.pnp.cjs"],
+  templated_args = ["--node_options=--require=/c/Users/.../src/github/me/labs-bazel/.pnp.cjs"],
   # BUG: hard-coded for Windows `cmd` fails with the message below:
   #      *it's odd to see /bin/bash reported when using `cmd`...
   #      An error occurred mounting one of your file systems. Please run 'dmesg' for more details.
-  #      /bin/bash: C:/users/iseri/_bazel_iseri/hfnv65ee/execroot/__main__/bazel-out/x64_windows-fastbuild/bin/src/node/console-basic/app.sh: No such file or directory
-  # templated_args = ["--node_options=--require=C:/Users/iseri/src/github/me/labs-bazel/.pnp.cjs"],
+  #      /bin/bash: C:/users/.../_bazel_.../hfnv65ee/execroot/__main__/bazel-out/x64_windows-fastbuild/bin/app1/app.sh: No such file or directory
+  # templated_args = ["--node_options=--require=C:/Users/.../src/github/me/labs-bazel/.pnp.cjs"],
 )

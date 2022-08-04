@@ -1,5 +1,5 @@
 https://stackoverflow.com/questions/57192057/up-level-references-in-bazel
 exports_files(
   [".pnp.cjs"],
-  ["//src/node/console-basic:__pkg__"]
+  ["//app1:__pkg__"]
 )

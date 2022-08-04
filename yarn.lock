@@ -31,9 +31,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"console-basic@workspace:src/node/console-basic":
+"console-basic@workspace:app1":
   version: 0.0.0-use.local
-  resolution: "console-basic@workspace:src/node/console-basic"
+  resolution: "console-basic@workspace:app1"
   dependencies:
     colors: ^1.4.0
   languageName: unknown
