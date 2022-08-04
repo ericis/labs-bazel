@@ -1,0 +1,13 @@
+{
+  "name": "labs-bazel",
+  "version": "1.0.0",
+  "repository": "https://github.com/ericis/labs-bazel",
+  "author": "Eric Swanson <ericis@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+  },
+  "packageManager": "yarn@3.2.2",
+  "devDependencies": {
+    "@bazel/bazelisk": "^1.12.0"
+  }
+}
